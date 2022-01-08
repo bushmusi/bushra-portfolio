@@ -2,7 +2,7 @@
 
 > This project is to show up my previous work port and practice figma, html, css(Flexbox), and Github workflow.
 
-![screenshot](./app_shot.PNG)
+![screenshot](./img/app_shot.png)
 
 Additional description about the project and its features.
 
