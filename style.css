@@ -1,12 +1,15 @@
 body {
   background-color: #242375;
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .toolbar {
   display: flex;
-  flex: 1;
-  justify-content: center;
+  flex-direction: row;
+  justify-items: center;
 }
 
 .header-list {
@@ -19,15 +22,15 @@ body {
 .header-list > .user-name {
   list-style: none;
   justify-items: flex-start;
-  flex: 1;
+  flex: 2;
 }
 
-.header-list > li a {
+.header-list > div a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
 
-.right-nav > li a {
+.right-nav > div a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
@@ -35,10 +38,10 @@ body {
 .right-nav {
   display: flex;
   flex: 1;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.header-list > .right-nav li {
+.header-list > .right-nav div {
   list-style: none;
   justify-self: end;
 }
