@@ -1,0 +1,150 @@
+body {
+  background-color: #242375;
+  font-family: 'Roboto', sans-serif;
+}
+
+.toolbar {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.header-list {
+  display: flex;
+  align-content: center;
+  min-width: 100vh;
+  flex: 1;
+}
+
+.header-list > .user-name {
+  list-style: none;
+  justify-items: flex-start;
+  flex: 1;
+}
+
+.header-list > li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.right-nav > li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.right-nav {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.header-list > .right-nav li {
+  list-style: none;
+  justify-self: end;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  list-style: none;
+}
+
+.headline > .full-name {
+  color: rgb(147, 145, 255);
+  font-weight: bold;
+  font-style: normal;
+  font-size: 90px;
+  flex: 2;
+}
+
+.headline > .carrier {
+  color: rgb(223, 225, 230);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  list-style: none;
+  margin: auto;
+  width: 50%;
+}
+
+.details > .description {
+  color: rgb(179, 186, 197);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.break > hr {
+  background-color: rgb(100, 99, 105);
+  border: none;
+}
+
+.details > .experience {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 29px;
+  color: rgb(147, 144, 255);
+}
+
+.language > .lan-list {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.1389px;
+  line-height: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.frameworks > .framework-list {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.1389px;
+  line-height: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.skills > .skill-list {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.1389px;
+  line-height: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 30%;
+}
+
+.social-icon > img {
+  display: flex;
+  flex-direction: row;
+}
