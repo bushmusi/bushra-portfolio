@@ -13,8 +13,13 @@ body {
 .toolbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.user-name {
+  flex: 1;
+  margin-left: 20px;
 }
 
 .user-name > a {
@@ -86,7 +91,7 @@ body {
 
 .experience {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -102,6 +107,7 @@ body {
   font-size: 13.1389px;
   line-height: 25px;
   color: rgb(255, 255, 255);
+  list-style: none;
 }
 
 .frameworks > .framework-list {
@@ -112,6 +118,7 @@ body {
   font-size: 13.1389px;
   line-height: 25px;
   color: rgb(255, 255, 255);
+  list-style: none;
 }
 
 .skills > .skill-list {
@@ -122,6 +129,8 @@ body {
   font-size: 13.1389px;
   line-height: 25px;
   color: rgb(255, 255, 255);
+  list-style: none;
+  width: 20vw;
 }
 
 .social-media {
