@@ -110,6 +110,10 @@ body {
   list-style: none;
 }
 
+.list-head {
+  list-style: none;
+}
+
 .frameworks > .framework-list {
   display: flex;
   flex-direction: column;
