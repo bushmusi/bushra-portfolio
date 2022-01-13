@@ -4,88 +4,78 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 80vw;
+  background-image: url('./img/top_circles.svg');
+  background-repeat: no-repeat;
 }
 
 .toolbar {
   display: flex;
   flex-direction: row;
-  justify-items: center;
-}
-
-.header-list {
-  display: flex;
-  align-content: center;
-  min-width: 100vh;
-  flex: 1;
-}
-
-.header-list > .user-name {
-  list-style: none;
-  justify-items: flex-start;
-  flex: 2;
-}
-
-.header-list > div a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-.right-nav > div a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-.right-nav {
-  display: flex;
-  flex: 1;
   justify-content: space-between;
+  align-items: center;
 }
 
-.header-list > .right-nav div {
-  list-style: none;
-  justify-self: end;
+.user-name > a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.right-nav > a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .headline {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
   list-style: none;
 }
 
 .headline > .full-name {
   color: rgb(147, 145, 255);
-  font-weight: bold;
   font-style: normal;
-  font-size: 90px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: 0.37px;
   flex: 2;
 }
 
 .headline > .carrier {
-  color: rgb(223, 225, 230);
+  color: rgb(237, 236, 255);
+  display: flex;
+  align-items: center;
+  text-align: center;
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .details {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  list-style: none;
-  margin: auto;
-  width: 50%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: static;
+  width: 327px;
+  height: 170px;
 }
 
-.details > .description {
-  color: rgb(179, 186, 197);
+.content > p {
+  color: rgb(200, 200, 212);
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 32px;
-  text-align: justify;
-  text-align-last: center;
+  line-height: 28px;
+  text-align: center;
+  margin: 40px 24px;
 }
 
 .break > hr {
@@ -96,6 +86,7 @@ body {
 .details > .experience {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -144,7 +135,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 30%;
+  min-width: 50%;
 }
 
 .social-icon > img {
