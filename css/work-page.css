@@ -67,7 +67,7 @@ body {
   border-left: 1px solid rgb(85, 85, 85);
 }
 
-#first-item {
+.first-item {
   padding: 10px 10px 10px 1px;
 }
 
