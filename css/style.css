@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .toolbar {
@@ -83,10 +84,6 @@ body {
   line-height: 28px;
   text-align: center;
   margin: 40px 24px;
-}
-
-.break {
-  display: inline-block;
 }
 
 .experience {
@@ -182,6 +179,11 @@ body {
   color: rgb(162, 163, 174);
 }
 
+.work-opening {
+  display: flex;
+  flex-direction: column;
+}
+
 .works {
   display: grid;
   position: relative;
@@ -194,7 +196,6 @@ body {
   color: rgb(148, 144, 255);
   text-align: center;
   height: 90px;
-  align-items: center;
   justify-content: flex-start;
   font-weight: 200;
   font-size: 20px;
@@ -222,6 +223,8 @@ body {
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
+  margin-top: 24px;
+  margin-bottom: 24px;
   color: rgb(220, 220, 232);
 }
 
@@ -233,6 +236,8 @@ body {
   overflow: hidden;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .tech-list > li {
@@ -271,28 +276,29 @@ body {
   line-height: 24px;
 }
 
-.top-work-shine-1 {
+.top-work-shine-1 > img {
   position: absolute;
-  width: 19.61px;
-  height: 282.57px;
-  right: 820.04px;
-  top: 124.71px;
-  background: rgb(237, 236, 255);
-  filter: blur(50px);
-  transform: rotate(-36.38deg);
+  width: 200px;
+  left: -10px;
+  top: 150px;
 }
 
-.bootom-work-shine-2 {
+#shine-2 > img {
+  transform: scaleX(-1);
   position: absolute;
-  width: 19.61px;
-  height: 82.57px;
-  left: 20.04px;
-  top: 54.71px;
-  background: rgb(237, 236, 255);
-  filter: blur(50px);
-  transform: rotate(-36.38deg);
+  width: 200px;
+  left: 270px;
+  top: 150px;
 }
 
-.last-in {
-  width: 100vw;
+#shine-3 > img {
+  transform: rotate(-50deg);
+  position: absolute;
+  width: 200px;
+  left: -115px;
+  top: 170px;
+}
+
+#last-hr-line > img {
+  width: 100%;
 }
