@@ -224,19 +224,21 @@
 
         <form action="#" method="post" class="contact-form">
             <div class="contact-inbox">
-                <input type="text" name="username" placeholder="Text Input" >
+                <input type="text" required name="username" size="30" placeholder="Text Input" >
             </div>
             
             <div class="contact-inbox">
-                <input type="email" name="email" placeholder="jeremy@gmail.com" >
+                <input type="email" required name="email" placeholder="jeremy@gmail.com" >
             </div>
 
             <div class="contact-txt-area">
-                <textarea name="desc" placeholder="Enter text here"></textarea>
+                <textarea name="desc" required maxlength="500" placeholder="Enter text here"></textarea>
             </div>
-
+            
+            <div class="btn-submit">
+                <input type="submit" value="See Project" >
+            </div>
         </form>
-        
     </section>
     
 </body>
