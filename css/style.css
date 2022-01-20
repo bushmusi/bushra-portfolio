@@ -336,19 +336,15 @@ body {
 .contact-intro > .contact-desc {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .contact-desc > p {
-  display: flex;
-  justify-content: center;
   font-family: 'Inter', sans-serif;
   text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
-  text-indent: 1.5cm;
   color: rgb(245, 245, 255);
 }
 
@@ -385,7 +381,7 @@ body {
   color: rgb(129, 129, 140);
 }
 
-.contact-inbox > input[type="text"]:invalid {
+.contact-inbox > input[type="text"]:focus:invalid {
   border: 4px dashed red;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -405,7 +401,7 @@ body {
   color: rgb(129, 129, 140);
 }
 
-.contact-inbox > input[type="email"]:invalid {
+.contact-inbox > input[type="email"]:focus:invalid {
   border: 4px dashed red;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -433,7 +429,7 @@ textarea {
   height: 124px;
 }
 
-textarea:invalid {
+textarea:focus:invalid {
   border: 4px dashed red;
   font-family: 'Inter', sans-serif;
   font-style: normal;
