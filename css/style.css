@@ -302,3 +302,207 @@ body {
 #last-hr-line > img {
   width: 100%;
 }
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 134px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.contact-container > .contact-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-intro > .contact-header {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-header > h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: rgb(147, 144, 255);
+}
+
+.contact-intro > .contact-desc {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-desc > p {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(245, 245, 255);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-inbox {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 24px;
+}
+
+.contact-inbox > input[type="text"] {
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(129, 129, 140);
+}
+
+.contact-inbox > input[type="text"]:valid {
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(129, 129, 140);
+}
+
+.contact-inbox > input[type="text"]:focus:invalid {
+  border: 4px dashed red;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(129, 129, 140);
+}
+
+.contact-inbox > input[type="email"] {
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(129, 129, 140);
+}
+
+.contact-inbox > input[type="email"]:focus:invalid {
+  border: 4px dashed red;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(129, 129, 140);
+}
+
+.contact-txt-area {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background-color: white;
+  margin-bottom: 24px;
+}
+
+textarea {
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  height: 124px;
+}
+
+textarea:focus:invalid {
+  border: 4px dashed red;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  height: 124px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  height: 48px;
+}
+
+.btn-grid > .btn-submit {
+  grid-column: 3 / 4;
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  background-color: rgb(125, 115, 252);
+}
+
+.btn-grid > .btn-submit:hover {
+  grid-column: 3 / 4;
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  background-color: rgb(171, 171, 194);
+}
+
+.btn-submit > input[type="submit"]:enabled {
+  background-color: rgb(125, 115, 252);
+  border: none;
+}
+
+.btn-submit > input[type="submit"]:hover {
+  background-color: rgb(171, 171, 194);
+  border: none;
+}
+
+.last-break {
+  display: inline-block;
+  margin-top: 71px;
+}
+
+.last-break > #last-line-id {
+  width: 100%;
+}
+
+.bottom-icons {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.bottom-icons > .social-icon {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  padding-left: 0;
+}
+
+.bottom-icons > .email-link {
+  grid-column: 2 / 3;
+  grid-row: 2;
+}
+
+.email-link > h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: rgb(235, 235, 255);
+}
