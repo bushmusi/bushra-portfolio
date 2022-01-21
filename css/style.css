@@ -64,9 +64,9 @@ body {
 
 .top-shine-1 {
   position: absolute;
-  width: 160px;
-  height: 160px;
-  left: 0.6px;
+  width: 60px;
+  height: 60px;
+  margin-right: 1200px;
 }
 
 .details {
@@ -74,6 +74,12 @@ body {
   flex-direction: column;
   align-items: center;
   list-style: none;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  width: 50%;
 }
 
 .content > p {
@@ -86,6 +92,10 @@ body {
   margin: 40px 24px;
 }
 
+.break {
+  display: inline-block;
+}
+
 .experience {
   display: flex;
   flex-wrap: wrap;
@@ -94,6 +104,10 @@ body {
   font-size: 18px;
   line-height: 29px;
   color: rgb(147, 144, 255);
+}
+
+.link-list-desk {
+  display: none;
 }
 
 .language > .lan-list {
@@ -131,7 +145,6 @@ body {
   line-height: 25px;
   color: rgb(255, 255, 255);
   list-style: none;
-  width: 20vw;
 }
 
 .bootom-shine-1 {
@@ -140,8 +153,7 @@ body {
   height: 68px;
   left: 375px;
   top: 495px;
-  background: rgb(237, 236, 255);
-  filter: blur(50px);
+  filter: blur(150px);
 }
 
 .social-icon {
@@ -301,6 +313,7 @@ body {
 
 #last-hr-line > img {
   width: 100%;
+  height: 1px;
 }
 
 .contact-container {
@@ -321,6 +334,10 @@ body {
 .contact-intro > .contact-header {
   display: flex;
   justify-content: center;
+}
+
+.social-links {
+  display: none;
 }
 
 .contact-header > h1 {
@@ -478,6 +495,7 @@ textarea:focus:invalid {
 
 .last-break > #last-line-id {
   width: 100%;
+  height: 1px;
 }
 
 .bottom-icons {
@@ -505,4 +523,242 @@ textarea:focus:invalid {
   line-height: 28px;
   text-align: center;
   color: rgb(235, 235, 255);
+}
+
+@media screen and (max-width: 992px) {
+  .bootom-shine-1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 600px;
+    filter: blur(0.5px);
+  }
+
+  .bootom-shine-1 > img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+
+  .chat-container {
+    display: none;
+  }
+
+  .desk-footer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .user-name {
+    margin-left: 156px;
+  }
+
+  .right-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 156px;
+    width: 50%;
+  }
+
+  .right-nav > .link-list-desk {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+  }
+
+  li > .menus {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .link-humburgur {
+    display: none;
+  }
+
+  .top-shine-1 > img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 0.5em;
+  }
+
+  .bootom-shine-1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 435px;
+    left: 1100px;
+    filter: blur(0.5px);
+  }
+
+  .bootom-shine-1 > img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+
+  .experience {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .skills > .skill-list {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13.1389px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    list-style: none;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .social-links > .social-icon {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    min-width: 20%;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .details > * {
+    display: none;
+  }
+
+  .work-opening {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .works {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .project-img {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .project-img > img {
+    height: 100%;
+    width: 50vw;
+  }
+
+  .work-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .tech-list {
+    width: 75%;
+  }
+
+  .see-more {
+    width: 40%;
+  }
+
+  .contact-container {
+    display: none;
+  }
+
+  .chat-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 126px;
+  }
+
+  .chat-content {
+    width: 50%;
+  }
+
+  .chat-header > h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    color: rgb(147, 144, 255);
+  }
+
+  .chat-desc > p {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 0;
+    color: rgb(245, 245, 255);
+  }
+
+  .last-break {
+    display: flex;
+  }
+
+  .last-break > #last-line-id-1 {
+    width: 100%;
+    height: 1px;
+  }
+
+  .top-work-shine-1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+  }
+
+  .top-work-shine-1 > img {
+    position: absolute;
+    width: 167px;
+    left: -108px;
+    top: 150px;
+  }
+
+  #shine-2 > img {
+    width: 200px;
+    left: 1102px;
+  }
+
+  #shine-3 > img {
+    transform: rotate(126deg);
+    position: absolute;
+    width: 200px;
+    left: -115px;
+    top: 235px;
+  }
+
+  #email-contact {
+    text-decoration: none;
+    color: white;
+  }
+
+  #last-hr-line > img {
+    height: 1px;
+  }
 }
