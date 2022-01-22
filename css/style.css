@@ -652,6 +652,7 @@ textarea:focus:invalid {
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
+    padding: 100px;
   }
 
   .social-links > .social-icon {
@@ -667,6 +668,10 @@ textarea:focus:invalid {
     margin-right: 20px;
   }
 
+  #last-social-link {
+    justify-content: center;
+  }
+
   .details > * {
     display: none;
   }
@@ -676,7 +681,6 @@ textarea:focus:invalid {
     flex-direction: column;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 108px;
   }
 
   .page-header {
