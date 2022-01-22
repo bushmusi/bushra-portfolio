@@ -14,6 +14,10 @@ body {
   align-items: center;
 }
 
+.link-humburgur > img {
+  margin-right: 20px;
+}
+
 .user-name {
   flex: 1;
   margin-left: 20px;
@@ -26,11 +30,6 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
-}
-
-.right-nav > a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
 }
 
 .headline {
@@ -136,6 +135,32 @@ body {
   list-style: none;
 }
 
+.desk-circle {
+  display: none;
+}
+
+.full-circle {
+  list-style: none;
+  width: 200px;
+  height: 200px;
+}
+
+img.full-circle {
+  width: 170px;
+  height: 200px;
+  position: absolute;
+  right: 0;
+  top: 660px;
+}
+
+img.work-2-img {
+  width: 170px;
+  height: 200px;
+  position: absolute;
+  right: 0;
+  top: 560px;
+}
+
 .skills > .skill-list {
   display: flex;
   flex-direction: column;
@@ -145,15 +170,6 @@ body {
   line-height: 25px;
   color: rgb(255, 255, 255);
   list-style: none;
-}
-
-.bootom-shine-1 {
-  position: absolute;
-  width: 68px;
-  height: 68px;
-  left: 375px;
-  top: 495px;
-  filter: blur(150px);
 }
 
 .social-icon {
@@ -220,6 +236,21 @@ body {
   margin-top: 5px;
 }
 
+.project-sec-img {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.project-sec-img > img {
+  width: 100%;
+  height: 50vh;
+}
+
+.project-desk-img {
+  display: none;
+}
+
 .project-title > h2 {
   display: block;
   color: white;
@@ -261,31 +292,19 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.see-more {
-  display: flex;
-  align-content: center;
-  align-items: center;
+button.see-more {
+  font-family: 'Roboto', sans-serif;
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 30vw;
+  width: 20%;
   letter-spacing: 0.03em;
   background-color: rgb(125, 115, 252);
-}
-
-.see-more > button {
-  background-color: rgb(125, 115, 252); /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 24px;
+  padding: 12px;
+  border: none;
+  color: white;
 }
 
 .top-work-shine-1 > img {
@@ -308,7 +327,7 @@ body {
   position: absolute;
   width: 200px;
   left: -115px;
-  top: 170px;
+  top: 350px;
 }
 
 #last-hr-line > img {
@@ -462,6 +481,10 @@ textarea:focus:invalid {
   height: 48px;
 }
 
+.btn-submit > input {
+  color: white;
+}
+
 .btn-grid > .btn-submit {
   grid-column: 3 / 4;
   display: flex;
@@ -502,6 +525,7 @@ textarea:focus:invalid {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr;
+  margin-top: 20px;
 }
 
 .bottom-icons > .social-icon {
@@ -527,17 +551,16 @@ textarea:focus:invalid {
 
 @media screen and (max-width: 992px) {
   .bootom-shine-1 {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    left: 600px;
-    filter: blur(0.5px);
+    display: flex;
+    justify-content: flex-end;
+    width: 68px;
+    height: 68px;
   }
 
   .bootom-shine-1 > img {
-    position: relative;
-    width: 150px;
-    height: 150px;
+    position: absolute;
+    width: 68px;
+    height: 68px;
   }
 
   .chat-container {
@@ -640,6 +663,10 @@ textarea:focus:invalid {
     padding-left: 0;
   }
 
+  .social-icon > li {
+    margin-right: 20px;
+  }
+
   .details > * {
     display: none;
   }
@@ -649,6 +676,19 @@ textarea:focus:invalid {
     flex-direction: column;
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 108px;
+  }
+
+  .page-header {
+    margin-bottom: 53px;
+  }
+
+  .page-header > h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 114px;
   }
 
   .works {
@@ -665,6 +705,21 @@ textarea:focus:invalid {
   }
 
   .project-img > img {
+    height: 100%;
+    width: 50vw;
+  }
+
+  .project-sec-img > img {
+    display: none;
+  }
+
+  .project-desk-img {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .project-desk-img > img {
     height: 100%;
     width: 50vw;
   }
@@ -738,6 +793,58 @@ textarea:focus:invalid {
     width: 167px;
     left: -108px;
     top: 150px;
+  }
+
+  .btn-send {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    height: 80px;
+    align-items: center;
+  }
+
+  .btn-send > input {
+    width: 30%;
+    height: 65%;
+    color: white;
+    border: none;
+    background-color: rgb(147, 144, 255);
+  }
+
+  .btn-send > input[type="submit"]:hover {
+    background-color: aquamarine;
+  }
+
+  button.see-more {
+    width: 40%;
+    border: none;
+  }
+
+  img.work-2-img {
+    width: 170px;
+    height: 200px;
+    position: absolute;
+    right: -115px;
+    top: 333px;
+  }
+
+  .full-circle {
+    display: none;
+  }
+
+  .desk-circle {
+    display: block;
+    list-style: none;
+    width: 200px;
+    height: 200px;
+  }
+
+  img.desk-circle {
+    width: 170px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 371px;
   }
 
   #shine-2 > img {
