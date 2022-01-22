@@ -48,6 +48,8 @@ body {
   text-align: center;
   letter-spacing: 0.37px;
   flex: 2;
+  animation-name: rotate_name;
+  animation-duration: 1s;
 }
 
 .carrier > h2 {
@@ -845,6 +847,19 @@ textarea:focus:invalid {
     position: absolute;
     right: 0;
     top: 371px;
+  }
+
+  a {
+    transition: font-size 1s;
+  }
+
+  a:hover {
+    font-size: 32px;
+  }
+
+  @keyframes rotate_name {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
   }
 
   #shine-2 > img {
