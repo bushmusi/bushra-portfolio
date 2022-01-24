@@ -1,6 +1,6 @@
 # Microverse Portfolio
 
-> This project is to show up my previous work port and practice figma, html, css(Flexbox), and Github workflow.
+> This project is to show up my previous work portfolio and practice figma, html, css(Flexbox), and Github workflow.
 
 ![screenshot](./img/app_shot.PNG)
 
