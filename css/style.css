@@ -551,6 +551,11 @@ textarea:focus:invalid {
   color: rgb(235, 235, 255);
 }
 
+@keyframes rotate_name {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 @media screen and (max-width: 992px) {
   .bootom-shine-1 {
     display: flex;
@@ -571,6 +576,12 @@ textarea:focus:invalid {
 
   .desk-footer {
     display: none;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    width: 80%;
   }
 }
 
@@ -859,11 +870,6 @@ textarea:focus:invalid {
 
   a:hover {
     font-size: 32px;
-  }
-
-  @keyframes rotate_name {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
   }
 
   #shine-2 > img {
