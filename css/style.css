@@ -5,7 +5,7 @@ body {
   flex-direction: column;
   justify-content: center;
   overflow-x: hidden;
-}  
+}
 
 .mobile-menu-list {
   display: none;
