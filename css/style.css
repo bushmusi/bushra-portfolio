@@ -5,7 +5,7 @@ body {
   flex-direction: column;
   justify-content: center;
   overflow-x: hidden;
-}
+}  
 
 .mobile-menu-list {
   display: none;
@@ -1006,7 +1006,7 @@ textarea:focus:invalid {
 
   .project-img > img {
     height: 100%;
-    width: 50vw;
+    width: 30vw;
   }
 
   .project-sec-img > img {
@@ -1021,7 +1021,7 @@ textarea:focus:invalid {
 
   .project-desk-img > img {
     height: 100%;
-    width: 50vw;
+    width: 30vw;
   }
 
   .work-grid {
