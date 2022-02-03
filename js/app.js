@@ -103,8 +103,8 @@ const projBtns = `
 
 popWinSection.innerHTML += popupHeader;
 popWinSection.innerHTML += projImg;
-popWinSection.innerHTML += projDetail
-popWinSection.innerHTML += projBtns
+popWinSection.innerHTML += projDetail;
+popWinSection.innerHTML += projBtns;
 
 function openClosePopupWin(element) {
   if (popWinSection.style.display === 'flex') {
