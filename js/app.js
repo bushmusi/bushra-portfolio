@@ -27,28 +27,36 @@ eventTagId.forEach(
 );
 
 const projectContent = [{
-  title: 'Tonic',
-  text: "Tonic is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and .",
+  name: 'Tonic',
+  description: "Tonic is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and .",
   mobileImage: './img/card1.png',
   tech: ['html', 'css', 'javaScript'],
+  sourceCode:"https://github.com/bushmusi/Microverse-Portfolio",
+  livecode:"https://bushmusi.github.io/Microverse-Portfolio/",
 },
 {
-  title: 'Multi-Post Stories',
-  text: "Multi-Post Stories is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and ",
+  name: 'Multi-Post Stories',
+  description: "Multi-Post Stories is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and ",
   mobileImage: './img/card2.svg',
   tech: ['html', 'css', 'javaScript', 'Angular'],
+  sourceCode:"https://github.com/bushmusi/Microverse-Portfolio",
+  livecode:"https://bushmusi.github.io/Microverse-Portfolio/",
 },
 {
-  title: 'Facebook 360',
-  text: "Facebook 360 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and .",
+  name: 'Facebook 360',
+  description: "Facebook 360 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and .",
   mobileImage: './img/card3.svg',
   tech: ['html', 'css', 'React'],
+  sourceCode:"https://github.com/bushmusi/Microverse-Portfolio",
+  livecode:"https://bushmusi.github.io/Microverse-Portfolio/",
 },
 {
-  title: 'Uber Navigation',
-  text: "Uber Navigationis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and .",
+  name: 'Uber Navigation',
+  description: "Uber Navigationis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and .",
   mobileImage: './img/card4.svg',
   tech: ['html', 'css', 'RoR', 'html'],
+  sourceCode:"https://github.com/bushmusi/Microverse-Portfolio",
+  livecode:"https://bushmusi.github.io/Microverse-Portfolio/",
 }];
 
 const projBtnList = [];
@@ -63,12 +71,16 @@ function openClosePopupWin(element) {
     popWinSection.style.display = 'flex';
     bodyTag.style.overflow = 'hidden';
     const currentProjIndex = projBtnList.indexOf(element.id);
-    const title = document.getElementById('popup-title');
-    title.textContent = projectContent[currentProjIndex].title;
+    const name = document.getElementById('popup-title');
+    name.textContent = projectContent[currentProjIndex].name;
+    const projSource = document.getElementById('popup-see-live');
+    projSource.href = projectContent[currentProjIndex].sourceCode;
+    const projLive = document.getElementById('popup-see-source');
+    projLive.href = projectContent[currentProjIndex].livecode;
     const img = document.querySelector('#popup-proj-img');
     img.src = projectContent[currentProjIndex].mobileImage;
     const desc = document.getElementById('popup-proj-desc');
-    desc.textContent = projectContent[currentProjIndex].text;
+    desc.textContent = projectContent[currentProjIndex].description;
     const techListNode = document.getElementById('popup-tech-list-id');
     const currentTechList = projectContent[currentProjIndex].tech;
     techListNode.innerHTML = '<li><img src="./img/vertical_col.png" alt="vertical_col"></li>';
