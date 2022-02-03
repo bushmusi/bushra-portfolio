@@ -28,15 +28,15 @@ eventTagId.forEach(
 
 const projectContent = [{
   name: 'Tonic',
-  description: "Tonic is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and .",
-  mobileImage: './img/card1.png',
+  description: "Tonic A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  mobileImage: './img/card2.svg',
   tech: ['html', 'css', 'javaScript'],
   sourceCode: 'https://github.com/bushmusi/Microverse-Portfolio',
   livecode: 'https://bushmusi.github.io/Microverse-Portfolio/',
 },
 {
   name: 'Multi-Post Stories',
-  description: "Multi-Post Stories is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and ",
+  description: "Multi-Post Stories A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   mobileImage: './img/card2.svg',
   tech: ['html', 'css', 'javaScript', 'Angular'],
   sourceCode: 'https://github.com/bushmusi/Microverse-Portfolio',
@@ -44,7 +44,7 @@ const projectContent = [{
 },
 {
   name: 'Facebook 360',
-  description: "Facebook 360 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and .",
+  description: "Facebook 360 A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   mobileImage: './img/card3.svg',
   tech: ['html', 'css', 'React'],
   sourceCode: 'https://github.com/bushmusi/Microverse-Portfolio',
@@ -52,7 +52,7 @@ const projectContent = [{
 },
 {
   name: 'Uber Navigation',
-  description: "Uber Navigationis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and .",
+  description: "Uber Navigationis A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   mobileImage: './img/card4.svg',
   tech: ['html', 'css', 'RoR', 'html'],
   sourceCode: 'https://github.com/bushmusi/Microverse-Portfolio',
@@ -62,6 +62,49 @@ const projectContent = [{
 const projBtnList = [];
 const btnListNode = document.querySelectorAll('.see-more');
 const popWinSection = document.querySelector('.mobile-popup');
+
+const popupHeader = `
+  <div class="popup-heading">
+    <h2 id="popup-title">Title Here</h2>
+    <img src="./img/popup_cancel.png" alt="Pop Cancel" class="popup-cancel-btn" id="popup-win-cancel">
+  </div>
+`;
+
+const projImg = `
+  <div class="popup-proj-img">
+    <img src="./img/snapshoot_portfolio.png" alt="Project Image" id="popup-proj-img">
+  </div>
+`;
+
+const projDetail = `
+  <div class="popup-proj-desc">
+              
+    <div class="popup-detail">
+        <p id="popup-proj-desc"></p>
+    </div>
+    <div class="popup-tech-box">
+        <ul class="popup-tech-list" id="popup-tech-list-id">
+        </ul>
+    </div>
+
+  </div>
+`;
+
+const projBtns = `
+  <div class="popup-btn">
+    <a  href="#" target="_blank" id="popup-see-live" rel="noopener noreferrer">
+        See Live <img src="./img/live_icon.png" alt="popup-btn-img" class="popup-btn-img">
+    </a>
+    <a  href="#"  target="_blank" id="popup-see-source" rel="noopener noreferrer">
+        See Souurce <img src="./img/github_icon.png" alt="popup-btn-img" class="popup-btn-img" >
+    </a>
+  </div>
+`;
+
+popWinSection.innerHTML += popupHeader;
+popWinSection.innerHTML += projImg;
+popWinSection.innerHTML += projDetail
+popWinSection.innerHTML += projBtns
 
 function openClosePopupWin(element) {
   if (popWinSection.style.display === 'flex') {
