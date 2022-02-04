@@ -32,7 +32,7 @@
                 <ul class="link-list-desk">
                     <li><a href="#portfolio" class="menus">Portfolio</a></li>
                     <li><a href="#about" class="menus">About</a></li>
-                    <li><a href="#desk-contact" class="menus">Contact</a></li>
+                    <li><a href="#contact" class="menus">Contact</a></li>
                     <li><a href="#"><img src="./img/mail.png" alt="Email Icon"></a></li>
                 </ul>
             </div>
@@ -346,17 +346,20 @@
             
         </div>
 
-        <form action="https://formspree.io/f/1" method="post" class="contact-form">
+        <form action="https://formspree.io/f/1" method="post" class="contact-form" id="submit-form">
             <div class="contact-inbox">
                 <input type="text" required name="username" maxlength="30" placeholder="Text Input" >
             </div>
             
             <div class="contact-inbox">
-                <input type="email" required name="email" placeholder="jeremy@gmail.com" >
+                <input type="email" required name="email" id="email" placeholder="jeremy@gmail.com" >
             </div>
 
             <div class="contact-txt-area">
                 <textarea name="desc" required maxlength="500" placeholder="Enter text here"></textarea>
+            </div>
+
+            <div class="msg-box">
             </div>
             
             <div class="btn-grid">
@@ -366,7 +369,7 @@
             </div>
         </form>
 
-        <div class="last-break">
+        <div class="last-break" id="last-break-id">
             <img src="./img/hor_line.png" alt="Horizontal Line" id="last-line-id">
         </div>
 
@@ -385,43 +388,13 @@
 
     </section>
 
-    <section class="chat-container" id="desk-contact">
-        <div class="chat-content">
-            <div class="chat-header">
-                <h1>Let's Chat</h1>
-            </div>
-            <div class="chat-desc">
-                <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I would love to help with it </p>
-            </div>
-            <form action="https://formspree.io/f/1" method="post" class="contact-form">
-                <div class="contact-inbox">
-                    <input type="text" required name="username" maxlength="30" placeholder="Full Name" >
-                </div>
-                
-                <div class="contact-inbox">
-                    <input type="email" required name="email" placeholder="Email Address" >
-                </div>
-    
-                <div class="contact-txt-area">
-                    <textarea name="desc" required maxlength="500" placeholder="Enter your message here"></textarea>
-                </div>
-                
-                <div class="btn-send">
-                    <input type="submit" value="Send">
-                </div>
-            </form>
-        
-        </div>
-
-    </section>
-
     <div class="desk-footer">
         <footer>
             <div class="last-break">
                 <img src="./img/hor_line.png" alt="Horizontal Line" id="last-line-id-1">
             </div>
     
-            <div class="bottom-icons">
+            <div class="bottom-desk-icons">
                 <ul class="social-icon" id="last-social-link">
                     <li><a href="#"><img src="./img/github.png" alt="Github"></a>
                     <li><a href="#"><img src="./img/linkdin.png" alt="Linkding"></a>
@@ -434,5 +407,6 @@
         </footer>
     </div>
     <script src="./js/app.js"></script>
+    <script src="./js/form-validate.js"></script>
 </body>
 </html>
