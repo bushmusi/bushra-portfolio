@@ -348,15 +348,15 @@
 
         <form action="https://formspree.io/f/1" method="post" class="contact-form" id="submit-form">
             <div class="contact-inbox">
-                <input type="text" required name="username" maxlength="30" placeholder="Text Input" >
+                <input type="text" required  class="input-box" name="username" id="input-name" maxlength="30" placeholder="Enter name" >
             </div>
             
             <div class="contact-inbox">
-                <input type="email" required name="email" id="email" placeholder="jeremy@gmail.com" >
+                <input type="email" required class="input-box"  name="email" id="input-email" placeholder="jeremy@gmail.com" >
             </div>
 
             <div class="contact-txt-area">
-                <textarea name="desc" required maxlength="500" placeholder="Enter text here"></textarea>
+                <textarea name="desc" required maxlength="500" placeholder="Enter text description here..." id="input-desc" class="input-box"></textarea>
             </div>
 
             <div class="msg-box">
@@ -408,5 +408,6 @@
     </div>
     <script src="./js/app.js"></script>
     <script src="./js/form-validate.js"></script>
+    <script src="./js/local-storage.js"></script>
 </body>
 </html>
