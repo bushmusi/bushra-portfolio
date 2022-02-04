@@ -635,7 +635,6 @@ button.see-more {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  color: rgb(129, 129, 140);
 }
 
 .contact-inbox > input[type="email"] {
@@ -645,7 +644,6 @@ button.see-more {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  color: rgb(129, 129, 140);
 }
 
 .contact-txt-area {
