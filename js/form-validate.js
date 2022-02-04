@@ -14,6 +14,7 @@ form.addEventListener('submit', (event) => {
   const emailText = form.elements.email.value;
   const isEmailValid = validateEmail(emailText);
   if (isEmailValid) {
+    localStorage.clear();
     form.submit();
   }
   const msgBox = document.querySelector('.msg-box');
