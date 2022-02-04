@@ -13,10 +13,11 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   const emailText = form.elements.email.value;
   const isEmailValid = validateEmail(emailText);
-  if (isEmailValid) {
-    localStorage.clear();
-    form.submit();
-  }
   const msgBox = document.querySelector('.msg-box');
   msgBox.innerHTML = `<small>${EMAIL_INVALID} <i>${emailText.toLowerCase()}<i></small>`;
+  if (isEmailValid) {
+    form.submit();
+    localStorage.clear();
+    msgBox.innerHTML = '';
+  }
 });
