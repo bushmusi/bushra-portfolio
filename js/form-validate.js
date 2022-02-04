@@ -18,3 +18,4 @@ form.addEventListener('submit', (event) => {
   }
   const msgBox = document.querySelector('.msg-box');
   msgBox.innerHTML = `<small>${EMAIL_INVALID} <i>${emailText.toLowerCase()}<i></small>`;
+});
