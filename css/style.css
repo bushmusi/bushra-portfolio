@@ -170,6 +170,23 @@ header {
   margin: 40px 24px;
 }
 
+.msg-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: rgb(221, 72, 72);
+}
+
+.msg-box > small {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
 .break {
   display: inline-block;
 }
@@ -498,7 +515,7 @@ a > .popup-btn-img {
 button.see-more {
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  width: 30%;
+  width: 40%;
   letter-spacing: 0.03em;
   background-color: rgb(125, 115, 252);
   font-style: normal;
@@ -543,7 +560,7 @@ button.see-more {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 134px;
+  margin-top: 90px;
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -621,28 +638,8 @@ button.see-more {
   color: rgb(129, 129, 140);
 }
 
-.contact-inbox > input[type="text"]:focus:invalid {
-  border: 4px dashed red;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
-  color: rgb(129, 129, 140);
-}
-
 .contact-inbox > input[type="email"] {
   border: none;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
-  color: rgb(129, 129, 140);
-}
-
-.contact-inbox > input[type="email"]:focus:invalid {
-  border: 4px dashed red;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -661,16 +658,6 @@ button.see-more {
 
 textarea {
   border: none;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
-  height: 124px;
-}
-
-textarea:focus:invalid {
-  border: 4px dashed red;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -855,6 +842,7 @@ textarea:focus:invalid {
     line-height: 24px;
     margin-bottom: 24px;
     padding: 20px;
+    border-bottom: none !important;
   }
 
   #popup-see-source {
@@ -1039,38 +1027,37 @@ textarea:focus:invalid {
   }
 
   .contact-container {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 134px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 
-  .chat-container {
+  .contact-container > .contact-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-intro > .contact-header {
     display: flex;
     justify-content: center;
-    margin-top: 126px;
   }
 
-  .chat-content {
+  .contact-intro > .contact-desc {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-desc > p {
     width: 50%;
   }
 
-  .chat-header > h1 {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 44px;
-    color: rgb(147, 144, 255);
-  }
-
-  .chat-desc > p {
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
-    padding-left: 0;
-    color: rgb(245, 245, 255);
+  .contact-form > div {
+    align-self: center;
+    width: 50%;
   }
 
   .last-break {
@@ -1103,6 +1090,27 @@ textarea:focus:invalid {
     align-items: center;
   }
 
+  .bottom-icons {
+    display: none;
+  }
+
+  #last-break-id {
+    display: none;
+  }
+
+  .bottom-desk-icons {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 20px;
+  }
+
+  .bottom-desk-icons > .social-icon {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding-left: 0;
+  }
+
   .btn-send > input {
     width: 30%;
     height: 65%;
@@ -1116,7 +1124,7 @@ textarea:focus:invalid {
   }
 
   button.see-more {
-    width: 40%;
+    width: 20%;
     border: none;
   }
 
