@@ -19,5 +19,8 @@ form.addEventListener('submit', (event) => {
     form.submit();
     localStorage.clear();
     msgBox.innerHTML = '';
+  } else {
+    const emailNode = document.querySelector('#input-email');
+    emailNode.style.border = 'solid 2px red';
   }
 });
