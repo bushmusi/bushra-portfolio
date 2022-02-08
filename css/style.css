@@ -678,20 +678,12 @@ textarea {
   display: flex;
   padding: 12px;
   justify-content: center;
-  background-color: rgb(125, 115, 252);
-}
-
-.btn-grid > .btn-submit:hover {
-  grid-column: 3 / 4;
-  display: flex;
-  padding: 12px;
-  justify-content: center;
-  background-color: rgb(171, 171, 194);
 }
 
 .btn-submit > input[type="submit"]:enabled {
   background-color: rgb(125, 115, 252);
   border: none;
+  padding: 14px 20px;
 }
 
 .btn-submit > input[type="submit"]:hover {
@@ -1152,7 +1144,8 @@ textarea {
     top: 371px;
   }
 
-  a:hover {
+  a:hover,
+  a.active-link {
     border-bottom: 1px solid white;
   }
 
