@@ -27,12 +27,12 @@ eventTagId.forEach(
 );
 
 const projectContent = [{
-  name: 'Tonic',
-  description: "Tonic A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  mobileImage: './img/card2.svg',
+  name: 'Todo List',
+  description: 'Todo list application used for storing our task in a web and manipulating them as we like to do. In this project I have used local-storage feature to store list of todo items. There is also unit testing freature. Project have been build using TDD design patterns.',
+  mobileImage: './img/todo_list.png',
   tech: ['html', 'css', 'javaScript'],
-  sourceCode: 'https://github.com/bushmusi/Microverse-Portfolio',
-  livecode: 'https://bushmusi.github.io/Microverse-Portfolio/',
+  sourceCode: 'https://github.com/bushmusi/todo-list',
+  livecode: 'https://bushmusi.github.io/todo-list/',
 },
 {
   name: 'Multi-Post Stories',
